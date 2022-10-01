@@ -1,0 +1,4 @@
+/debian/.debhelper
+/debian/vanilla-beta-notice
+/debian/vanilla-beta-notice.substvars
+/debian/debhelper-build-stamp
