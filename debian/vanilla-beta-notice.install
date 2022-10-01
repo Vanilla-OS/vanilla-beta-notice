@@ -1,0 +1,4 @@
+vanilla-beta-notice /usr/bin
+vanilla-beta-notice.desktop /usr/share/applications
+vanilla-beta-notice.desktop /etc/xdg/autostart
+vanilla-beta-notice.png /usr/share/icons/hicolor/scalable/apps

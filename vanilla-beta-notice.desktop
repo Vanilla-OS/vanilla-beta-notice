@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Vanilla Beta Notice
+Comment=Open a new terminal display the Beta Notice.
+Icon=vanilla-beta-notice
+Exec=vanilla-beta-notice
+Terminal=false
+Type=Application
