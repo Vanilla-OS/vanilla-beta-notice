@@ -27,7 +27,7 @@ improve Vanilla OS before the official release.
 - Complete the First Setup Wizard on first boot (enable immutability and
   sub system).
 - Try to install any package with 'apx install <package>'.
-- Try launching the application you just installed.
+- Try launching the application you just installed with 'apx run <application>'.
 - Try to install a package on your system using 'apx --sys install <package>'.
 - Try disabling the immutability entering in rw mode with 'sudo almost enter rw'.
 - Check the immutability status with 'sudo almost check'.
