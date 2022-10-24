@@ -1,6 +1,6 @@
 #!/bin/bash
 
-kgx -T "Vanilla OS - Closed Beta" \
+kgx -T "Vanilla OS - Open Beta" \
     -e printf "\033[1;32mHi! Welcome to Vanilla OS.
 =========================\033[0m
 If you are reading this, you are probably a tester or a developer, so
@@ -31,4 +31,9 @@ improve Vanilla OS before the official release.
 - Try to install a package on your system using 'apx --sys install <package>'.
 - Try disabling the immutability entering in rw mode with 'sudo almost enter rw'.
 - Check the immutability status with 'sudo almost check'.
-- Restart your PC and check if the immutability was restored to 'ro'."
+- Restart your PC and check if the immutability was restored to 'ro'.
+- Try making an overlay with `sudo almost overlay new <path>`, then add some files
+  to it and try to drop the overlay with `sudo almost overlay discard <path>`.
+- Do the same as above, but instead of discarding the overlay, try to commit it
+  with `sudo almost overlay commit <path>`.
+"
