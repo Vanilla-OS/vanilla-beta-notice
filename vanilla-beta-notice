@@ -32,8 +32,8 @@ improve Vanilla OS before the official release.
 - Try disabling the immutability entering in rw mode with 'sudo almost enter rw'.
 - Check the immutability status with 'sudo almost check'.
 - Restart your PC and check if the immutability was restored to 'ro'.
-- Try making an overlay with `sudo almost overlay new <path>`, then add some files
+- Try making an overlay with 'sudo almost overlay new <path>', then add some files
   to it and try to drop the overlay with `sudo almost overlay discard <path>`.
 - Do the same as above, but instead of discarding the overlay, try to commit it
-  with `sudo almost overlay commit <path>`.
+  with 'sudo almost overlay commit <path>'.
 "
