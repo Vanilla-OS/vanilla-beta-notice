@@ -18,14 +18,14 @@ improve Vanilla OS before the official release.
   GTK4+libadwaita installer.
 - Ubuntu packages can't be installed from GNOME Software if the immutability
   of the system is enabled. Use apx instead, we will remove the ability to
-  install Ubuntu packages from GNOME Software entirely in before the Open Beta.
+  install Ubuntu packages from GNOME Software entirely before the Open Beta.
 
 \033[1;34mSuggested tests:\033[0m
 - If you are here, well the first test is done! You got Vanilla OS running
   on your computer (live or not).
 - If in Live mode, try to install Vanilla OS on your computer.
-- Complete the First Setup Wizard on first boot (enable immutability and
-  sub system).
+- Complete the First Setup Wizard on the first boot (enable immutability and
+  subsystem).
 - Try to install any package with 'apx install <package>'.
 - Try launching the application you just installed with 'apx run <application>'.
 - Try to install a package on your system using 'apx --sys install <package>'.
