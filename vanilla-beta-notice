@@ -1,24 +1,22 @@
 #!/bin/bash
 
-kgx -T "Vanilla OS - Open Beta" \
+kgx -T "Vanilla OS - RC" \
     -e printf "\033[1;32mHi! Welcome to Vanilla OS.
 =========================\033[0m
 If you are reading this, you are probably a tester or a developer, so
 thank you for your interest in Vanilla OS! Please read the following
 information carefully.
 
-This is a Beta version, so it is not recommended to use it as a daily
+This is a development version, so it is not recommended to use it as a daily
 driver. If you get any error, please report it to the testing-issues
 repository on GitHub or to the Vanilla OS Discord server, to help us
 improve Vanilla OS before the official release.
 
-\033[1;31mKnown issues:\033[0m
-- The installer may freeze, don't worry, it's still working and will
-  finish the installation. We are going to replace it with Jade, a cool
-  GTK4+libadwaita installer.
-- Ubuntu packages can't be installed from GNOME Software if the immutability
-  of the system is enabled. Use apx instead, we will remove the ability to
-  install Ubuntu packages from GNOME Software entirely before the Open Beta.
+\033[1;31mKnown issues/Disclaimer:\033[0m
+- GNOME Extensions Manager does not work for some users.
+- Manual partitioning is disabled, not really a bug, but it will be
+  re-enabled in the near future.
+- UEFI support is not yet fully tested.
 
 \033[1;34mSuggested tests:\033[0m
 - If you are here, well the first test is done! You got Vanilla OS running
@@ -28,12 +26,6 @@ improve Vanilla OS before the official release.
   subsystem).
 - Try to install any package with 'apx install <package>'.
 - Try launching the application you just installed with 'apx run <application>'.
-- Try to install a package on your system using 'apx --sys install <package>'.
-- Try disabling the immutability entering in rw mode with 'sudo almost enter rw'.
-- Check the immutability status with 'sudo almost check'.
-- Restart your PC and check if the immutability was restored to 'ro'.
-- Try making an overlay with 'sudo almost overlay new <path>', then add some files
-  to it and try to drop the overlay with `sudo almost overlay discard <path>`.
-- Do the same as above, but instead of discarding the overlay, try to commit it
-  with 'sudo almost overlay commit <path>'.
-"
+- Try forcing an update with `vso trigger-update --now`.
+- Verify that A and B partitions are well recognized with: `abroot get present` 
+and `abroot get future`.
