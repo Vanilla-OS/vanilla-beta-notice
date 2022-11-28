@@ -29,3 +29,4 @@ improve Vanilla OS before the official release.
 - Try forcing an update with `vso trigger-update --now`.
 - Verify that A and B partitions are well recognized with: `abroot get present` 
 and `abroot get future`.
+"
